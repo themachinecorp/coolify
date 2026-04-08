@@ -15,6 +15,16 @@
                     <span class="menu-item-label">Back</span>
                 </a>
                 <a class="sub-menu-item menu-item-active" href="#"><span class="menu-item-label">General</span></a>
+                <a class="sub-menu-item"
+                    {{ wireNavigate() }}
+                    href="{{ route('project.service.container-info', $parameters) }}">
+                    <span class="menu-item-label">Container Info</span>
+                </a>
+                <a class="sub-menu-item"
+                    {{ wireNavigate() }}
+                    href="{{ route('project.service.network', $parameters) }}">
+                    <span class="menu-item-label">Network</span>
+                </a>
             </div>
         @endif
         <div class="w-full">
